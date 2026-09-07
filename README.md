@@ -1,16 +1,53 @@
-# React + Vite
+# 🪣 Jerigen Kocor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website landing page untuk **Jerigen Kocor**, sebuah bisnis yang menyediakan jerigen HDPE untuk berbagai kebutuhan seperti air, bensin, minyak, dan kebutuhan industri.
 
-Currently, two official plugins are available:
+Website ini dirancang dengan tampilan modern, responsif, dan berfokus pada kemudahan pelanggan dalam melihat produk serta melakukan pemesanan melalui WhatsApp.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🏠 Modern landing page
+- 📦 Informasi produk jerigen HDPE
+- 💰 Informasi harga dan paket produk
+- 📍 Informasi lokasi
+- 📞 Informasi kontak
+- 💬 Direct WhatsApp integration
+- 🛡️ Informasi garansi produk
+- 🚚 Informasi pengiriman
+- 📱 Responsive design
+- ⚡ Fast and lightweight interface
+- 🎨 Modern UI dengan kombinasi warna hijau dan navy
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+- Lucide React
+- Responsive Web Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Preview
+
+Website menampilkan:
+
+- Navbar dengan navigasi Home, About, Pricing, Location, dan Contact
+- Hero section dengan informasi utama bisnis
+- Product showcase
+- CTA "Chat WhatsApp"
+- Informasi jumlah produk terjual dan pelanggan grosir
+- Product benefits
+- Pricing section
+- Location section
+- Contact section
+
+## 🚀 Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/username/jerigen-kocor.git
+
+## 🚀 Kunjungi
+
+https://jerigen-kocor.vercel.app/
