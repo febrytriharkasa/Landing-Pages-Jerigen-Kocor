@@ -1,30 +1,29 @@
 import { ShieldCheck, Factory, Truck, Check } from "lucide-react"
+import { motion } from "framer-motion"
+
+const fadeUp = { initial: { opacity: 0, y: 20 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { duration: 0.5 } }
 
 export default function About() {
   return (
     <section id="about" className="jk-section">
-      <div className="jk-section-head">
+      <motion.div className="jk-section-head" {...fadeUp}>
         <h2>Mengapa Jerigen Kocor Kami Beda?</h2>
         <p>Bukan kaleng-kaleng. Material virgin HDPE, cetakan presisi, tutup kocor ulir rapat.</p>
-      </div>
+      </motion.div>
       <div className="jk-grid-3">
-        <div className="jk-card">
-          <div className="jk-card-icon"><ShieldCheck size={22} /></div>
-          <h3>Tahan Lama</h3>
-          <p>Material virgin HDPE yang tahan lama dan tidak mudah rusak dan tas gendongan yang kuat serta nyaman.</p>
-        </div>
-        <div className="jk-card">
-          <div className="jk-card-icon"><Factory size={22} /></div>
-          <h3>Pabrik Langsung</h3>
-          <p>Harga produsen tanpa perantara — jual per ikat (5 pcs). Beli banyak makin hemat.</p>
-        </div>
-        <div className="jk-card">
-          <div className="jk-card-icon"><Truck size={22} /></div>
-          <h3>Stok Ready & Kilat</h3>
-          <p>Stok 20L / 25L selalu ready. Minimal 1 ikat (5 pcs). Kirim se-Indonesia.</p>
-        </div>
+        {[
+          { Icon: ShieldCheck, title: "Tahan Lama", desc: "Material virgin HDPE yang tahan lama dan tidak mudah rusak dan tas gendongan yang kuat serta nyaman." },
+          { Icon: Factory, title: "Pabrik Langsung", desc: "Harga produsen tanpa perantara — jual per ikat (5 pcs). Beli banyak makin hemat." },
+          { Icon: Truck, title: "Stok Ready & Kilat", desc: "Stok 20L / 25L selalu ready. Minimal 1 ikat (5 pcs). Kirim se-Indonesia." },
+        ].map(({ Icon, title, desc }, i) => (
+          <motion.div key={title} className="jk-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.12 }}>
+            <div className="jk-card-icon"><Icon size={22} /></div>
+            <h3>{title}</h3>
+            <p>{desc}</p>
+          </motion.div>
+        ))}
       </div>
-      <div className="jk-about-split">
+      <motion.div className="jk-about-split" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}>
         <ul className="jk-checks">
           <li><Check size={16} /> Plastik HDPE virgin food-grade</li>
           <li><Check size={16} /> Dinding tebal tidak mudah penyok</li>
@@ -40,7 +39,7 @@ export default function About() {
             <div><dt>Warna</dt><dd>Biru, Putih</dd></div>
           </dl>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

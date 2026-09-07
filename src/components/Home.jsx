@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Factory, BadgeCheck, ShieldCheck, Truck, MessageCircle, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
+import { motion } from "framer-motion"
 import heroImg1 from "../assets/20_liter.png"
 import heroImg2 from "../assets/25_liter.png"
 import heroImg3 from "../assets/alat.png"
@@ -25,7 +26,13 @@ export default function Home() {
 
   return (
     <section id="home" className="jk-hero">
-      <div className="jk-hero-text">
+      <motion.div
+        className="jk-hero-text"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <h1>Jerigen Kocor <span>Kuat, Rapat,</span> Siap Kirim Se-Indonesia</h1>
         <p>Pabrik & toko jerigen HDPE untuk air, bensin, minyak, dan kebutuhan industri. Tebal, tidak bocor, tutup kocor anti rembes. Jual per ikat (1 ikat = 5 pcs) tidak menerima eceran atau satuan.</p>
         <div className="jk-hero-actions">
@@ -38,9 +45,15 @@ export default function Home() {
           <div><strong>20k+</strong><span>Jerigen Terjual</span></div>
           <div><strong>500+</strong><span>Pelanggan Grosir</span></div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="jk-hero-visual">
+      <motion.div
+        className="jk-hero-visual"
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
         <div
           className="jk-hero-card jk-slider"
           onMouseEnter={() => setPaused(true)}
@@ -87,7 +100,7 @@ export default function Home() {
           <span><BadgeCheck size={16} /> HDPE Tebal 2mm</span>
           <span><Truck size={16} /> Kirim Hari Ini</span>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
