@@ -4,6 +4,9 @@ Website landing page untuk **Jerigen Kocor**, sebuah bisnis yang menyediakan jer
 
 Website ini dirancang dengan tampilan modern, responsif, dan berfokus pada kemudahan pelanggan dalam melihat produk serta melakukan pemesanan melalui WhatsApp.
 
+Kunjungi Situs ini:
+https://jerigen-kocor.vercel.app/
+
 ## ✨ Features
 
 - 🏠 Modern landing page
@@ -47,7 +50,3 @@ Clone repository:
 
 ```bash
 git clone https://github.com/username/jerigen-kocor.git
-
-## 🚀 Kunjungi
-
-https://jerigen-kocor.vercel.app/
