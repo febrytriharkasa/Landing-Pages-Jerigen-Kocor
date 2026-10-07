@@ -44,34 +44,94 @@ export default function Footer() {
           </motion.div>
 
           <motion.div variants={itemVariants}>
-            <h2 className="text-sm font-black uppercase tracking-wider text-forest">Navigasi</h2>
+            <h2 className="text-sm font-black uppercase tracking-wider text-forest">
+              Navigasi
+            </h2>
             <nav className="mt-5 grid gap-3 text-sm font-semibold text-[#64665b]" aria-label="Navigasi footer">
-              <Link to="home" {...scrollProps} className="cursor-pointer transition-colors hover:text-forest">Beranda</Link>
-              <Link to="about" {...scrollProps} className="cursor-pointer transition-colors hover:text-forest">Tentang Kami</Link>
-              <Link to="pricing" {...scrollProps} className="cursor-pointer transition-colors hover:text-forest">Produk & Harga</Link>
-              <Link to="location" {...scrollProps} className="cursor-pointer transition-colors hover:text-forest">Lokasi Gudang</Link>
-              <Link to="contact" {...scrollProps} className="cursor-pointer transition-colors hover:text-forest">Kontak Pesanan</Link>
+              <Link
+                to="home"
+                href="#home"
+                {...scrollProps}
+                className="cursor-pointer transition-colors hover:text-forest"
+              >
+                Beranda
+              </Link>
+              <Link
+                to="about"
+                href="#about"
+                {...scrollProps}
+                className="cursor-pointer transition-colors hover:text-forest"
+              >
+                Tentang Kami
+              </Link>
+              <Link
+                to="pricing"
+                href="#pricing"
+                {...scrollProps}
+                className="cursor-pointer transition-colors hover:text-forest"
+              >
+                Produk & Harga
+              </Link>
+              <Link
+                to="location"
+                href="#location"
+                {...scrollProps}
+                className="cursor-pointer transition-colors hover:text-forest"
+              >
+                Lokasi Gudang
+              </Link>
+              <Link
+                to="contact"
+                href="#contact"
+                {...scrollProps}
+                className="cursor-pointer transition-colors hover:text-forest"
+              >
+                Kontak Pesanan
+              </Link>
             </nav>
           </motion.div>
 
           <motion.div variants={itemVariants}>
-            <h2 className="text-sm font-black uppercase tracking-wider text-forest">Hubungi Kami</h2>
+            <h2 className="text-sm font-black uppercase tracking-wider text-forest">
+              Hubungi Kami
+            </h2>
             <div className="mt-5 grid gap-4 text-sm leading-6 text-[#64665b]">
-              <a href="https://wa.me/628814394119?text=Halo%20Jerigen%20Kocor%2C%20saya%20mau%20tanya%20produk" target="_blank" rel="noreferrer" className="flex items-start gap-3 transition-colors hover:text-forest">
+              <a
+                href="https://wa.me/628814394119?text=Halo%20Jerigen%20Kocor%2C%20saya%20mau%20tanya%20produk"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-start gap-3 transition-colors hover:text-forest"
+              >
                 <MessageCircle size={18} className="mt-1 shrink-0 text-soil" />
-                <span><strong className="block text-forest">WhatsApp</strong>0881-4394-119</span>
+                <span>
+                  <strong className="block text-forest">WhatsApp</strong>
+                  0881-4394-119
+                </span>
               </a>
-              <a href="tel:+628814394119" className="flex items-start gap-3 transition-colors hover:text-forest">
+              <a
+                href="tel:+628814394119"
+                className="flex items-start gap-3 transition-colors hover:text-forest"
+              >
                 <Phone size={18} className="mt-1 shrink-0 text-soil" />
-                <span><strong className="block text-forest">Telepon</strong>0881-4394-119</span>
+                <span>
+                  <strong className="block text-forest">Telepon</strong>
+                  0881-4394-119
+                </span>
               </a>
             </div>
           </motion.div>
         </div>
 
         <div className="mt-12 flex flex-col gap-3 border-t border-[#ded7c7] pt-6 text-xs text-[#777568] sm:flex-row sm:items-center sm:justify-between">
-          <span>© {new Date().getFullYear()} Jerigen Kocor. Hak cipta dilindungi.</span>
-          <a href="https://maps.app.goo.gl/wuunQk99Hw1yffGt8" target="_blank" rel="noreferrer" className="font-bold text-forest transition-colors hover:text-soil">
+          <span>
+            © {new Date().getFullYear()} Jerigen Kocor. Hak cipta dilindungi.
+          </span>
+          <a
+            href="https://maps.app.goo.gl/wuunQk99Hw1yffGt8"
+            target="_blank"
+            rel="noreferrer"
+            className="font-bold text-forest transition-colors hover:text-soil"
+          >
             Lihat lokasi di Google Maps
           </a>
         </div>
