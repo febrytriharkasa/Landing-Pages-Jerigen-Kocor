@@ -24,7 +24,6 @@
 
 * { box-sizing: border-box; }
 body { margin: 0; min-width: 320px; }
-a { color: inherit; }
 img { display: block; max-width: 100%; }
 button, a { -webkit-tap-highlight-color: transparent; }
 :focus-visible { outline: 3px solid #b8683c; outline-offset: 3px; }

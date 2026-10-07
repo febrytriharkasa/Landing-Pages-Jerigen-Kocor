@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-scroll"
+import { motion } from "framer-motion"
 import { Menu, MessageCircle, X } from "lucide-react"
 import imgIcon from "/jerigen.svg"
 
@@ -36,7 +37,12 @@ export default function Navbar() {
   const closeMenu = () => setOpen(false)
 
   return (
-    <header className={`sticky top-0 z-50 border-b border-[#ded7c7]/80 bg-[#fcfaf5]/90 backdrop-blur-md transition-shadow ${scrolled ? "shadow-[0_8px_24px_rgba(32,39,31,0.08)]" : ""}`}>
+    <motion.header
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={`sticky top-0 z-50 border-b border-[#ded7c7]/80 bg-[#fcfaf5]/90 backdrop-blur-md transition-shadow ${scrolled ? "shadow-[0_8px_24px_rgba(32,39,31,0.08)]" : ""}`}
+    >
       <nav className="mx-auto flex h-[72px] max-w-7xl items-center justify-between gap-6 px-5 sm:px-8 lg:px-10" aria-label="Navigasi utama">
         <Link to="home" smooth duration={650} offset={-72} className="flex min-h-11 cursor-pointer items-center gap-3 text-sm font-bold tracking-[-0.02em] text-forest" onClick={closeMenu}>
           <img src={imgIcon} alt="" className="h-10 w-10 rounded-xl object-contain" />
@@ -73,6 +79,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </header>
+    </motion.header>
   )
 }
